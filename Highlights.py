@@ -21,8 +21,8 @@ if __name__ == '__main__':
 
 # 解析命令行参数
 folder_path = args.input
-project_name = args.project_name  # 替换为您实际的项目名称
-shooting_date = args.shooting_date  # 替换为您实际的拍摄日期
+project_name = args.project_name
+shooting_date = args.shooting_date
 now = datetime.datetime.now()
 Generation_time = now.strftime("%Y/%m/%d %H:%M:%S")
 Generation_timefile = now.strftime("%Y-%m-%d_%H-%M-%S")
