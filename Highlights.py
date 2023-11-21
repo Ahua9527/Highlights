@@ -9,13 +9,13 @@ from PIL import Image, ImageDraw, ImageFont
 # 主函数入口
 if __name__ == '__main__':
     # 设置命令行参数
-    parser = argparse.ArgumentParser(description='Generate CDL files from an ALE file.')
+    parser = argparse.ArgumentParser(description='Convert a pile of still into PDF.')
     # 添加-i参数，用于指定输入文件的路径
-    parser.add_argument('-i', '--input', required=True, help='Path to the input ALE file.')
+    parser.add_argument('-i', '--input', required=True, help='Specify a Still input directory.')
     # 添加-o参数，用于指定输出目录的路径
-    parser.add_argument('-o', '--output', required=True, help='Directory where CDL files will be saved.')
-    parser.add_argument('-p', '--project_name', required=True, help='Directory where CDL files will be saved.')
-    parser.add_argument('-d', '--shooting_date', required=True, help='Directory where CDL files will be saved.')
+    parser.add_argument('-o', '--output', required=True, help='Specify a Still output directory.')
+    parser.add_argument('-p', '--project_name', required=True, help='Specify a project name.')
+    parser.add_argument('-d', '--shooting_date', required=True, help='Designate a shooting day.')
     args = parser.parse_args()
 
 
